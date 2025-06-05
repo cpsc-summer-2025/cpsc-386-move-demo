@@ -199,7 +199,7 @@ class MoveScene(PressAnyKeyToExitScene):
                 # Can't use move_towards_ip because c.position is a property converting the
                 # sprite's rect center.
                 c.position = c.position.move_towards(
-                    c.original_position, c.inverse_speed * self._delta_time
+                    c.original_position, c.speed * self._delta_time
                 )
 
     def render_updates(self):

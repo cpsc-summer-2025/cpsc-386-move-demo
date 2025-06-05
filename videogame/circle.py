@@ -76,10 +76,10 @@ class CircleSprite(pygame.sprite.Sprite):
         """Return the circle's speed."""
         return self._speed
 
-    @property
-    def inverse_speed(self):
-        """The inverse speed which can't be slower than the min_speed"""
-        return max(CircleSprite.max_speed - self._speed, CircleSprite.min_speed)
+    # @property
+    # def inverse_speed(self):
+    #     """The inverse speed which can't be slower than the min_speed"""
+    #     return max(CircleSprite.max_speed - self._speed, CircleSprite.min_speed)
 
     def move_ip(self, x, y):
         """Move, in-place"""
